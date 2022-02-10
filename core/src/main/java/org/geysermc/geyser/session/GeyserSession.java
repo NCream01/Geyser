@@ -620,7 +620,7 @@ public class GeyserSession implements GeyserConnection, CommandSender {
     }
 
     public void authenticate(String username) {
-        authenticate(username, "");
+        authenticate(username.replace(" ","_"), "");
     }
 
     public void authenticate(String username, String password) {
